@@ -1,6 +1,6 @@
 /*
-    em HTML é ID    = #
-    em HTML é Class = .
+    em HTML é ID    = # (só pode um elemento)
+    em HTML é Class = . (pode varios elementos)
 */
 
 body {
@@ -17,4 +17,20 @@ h1#principal {
 }
 h2 {
     color: rgb(51, 77, 49);
+}
+.basico {
+    color: #3c805e;
+
+}
+.intermediario {
+    color: #80793c;
+    font-weight: bold;
+
+}
+.avancado {
+    color: #803c3c;
+    font-weight: bold;
+}
+.destaque {
+    background-color: #c5ca7d;
 }
