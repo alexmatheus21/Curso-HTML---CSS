@@ -17,12 +17,28 @@
         div:hover {
             background-color: yellow;
         }
+        a {
+            text-decoration: none;
+            color: rgb(33, 43, 43);
+        }
+        a:hover {
+            text-decoration: underline;
+            color: blueviolet;
+        }
+        a::after {
+            content: ' [link]';
+            font: italic 0.7rem arial;
+        }
     </style>
 </head>
 <body>
     <div id="d1">01</div>
     <div id="d2">02</div>
     <div id="d3">03</div>
+    <h1>teste de links</h1>
+    <ul>
+        <li><a href="#">Link de teste</a></li>
+    </ul>
     
 </body>
 </html>
