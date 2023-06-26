@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        thead,tfoot {
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+        td,tr {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- Anatomia das tabelas
+            thead
+                TR, TD, TH
+            tbody
+                 TR, TD, TH
+            tfoot
+                 TR, TD, TH
+        -->
+
+<table>
+    <thead>
+        <tr>
+            <td>Posição</td>
+            <td>País</td>
+            <td>População</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Índia</td>
+            <td>1 429 921 746</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>China</td>
+            <td>1 426 391 281</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Estados Unidos</td>
+            <td>339 987 103</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Indonésia</td>
+            <td>277 184 719</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Paquistão</td>
+            <td>240 215 932</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Nigéria</td>
+            <td>223 899 057</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Brasil</td>
+            <td>216 877 028</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total população</td>
+            <td colspan="2"><strong>4 154 476 866</strong></td>
+        </tr>
+    </tfoot>
+</table>
+
+
+
+    
+</body>
+</html>
