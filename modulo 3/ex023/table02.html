@@ -14,15 +14,25 @@
             color: white;
             text-align: center;
         }
-        td,tr {
+        td,th {
             border: 1px solid black;
             padding: 5px;
+        }
+        caption {
+            text-transform: uppercase;
+            padding: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!-- Anatomia das tabelas
+        CAPTION
             thead
                 TR, TD, TH
             tbody
@@ -32,11 +42,14 @@
         -->
 
 <table>
+    <caption>
+        população dos países
+    </caption>
     <thead>
         <tr>
-            <td>Posição</td>
-            <td>País</td>
-            <td>População</td>
+            <th scope="col" style="width: 150px;">Posição</th>
+            <th scope="col">País</th>
+            <th scope="col">População</th>
         </tr>
     </thead>
     <tbody>
@@ -78,7 +91,7 @@
     </tbody>
     <tfoot>
         <tr>
-            <td>Total população</td>
+            <th scope="row">Total população</th>
             <td colspan="2"><strong>4 154 476 866</strong></td>
         </tr>
     </tfoot>
